@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Inscrição - Trilhas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+    <!-- Meu css -->
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <header><h1>Página de Inscrição</h1></header>
+    <main>
+      <form action="">
+        <!-- Dados Pessoaos -->
+        <section>
+          <h2>Dados Pessoais</h2>
+          <div class="grupo-de-inputs">
+            <label for="input-nome">Nome Completo <input type="text" placeholder="Digite seu nome" id="input-nome" /></label>
+            <label for="input-sexo"
+              >Sexo
+              <select name="sexo" id="input-sexo">
+                <option value="">Selecione uma opção</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+              </select>
+            </label>
+            <label for="input-data">Data de Nascimento <input type="date" id="input-data" /></label>
+            <label for="input-cpf">CPF <input type="text" placeholder="Digite seu CPF" id="input-cpf" /></label>
+          </div>
+        </section>
+        <!-- Informações de Contato -->
+        <section>
+          <h2>Contato</h2>
+          <div class="grupo-de-inputs">
+            <label for="input-telefone">Telefone <input type="text" placeholder="Digite seu telefone" id="input-telefone" /></label>
+            <label for="input-email">Email <input type="email" placeholder="Digite seu email" id="input-email" /></label>
+          </div>
+        </section>
+        <!-- Informações de Escolaridade -->
+        <section>
+          <h2>Escolaridade</h2>
+          <div class="grupo-de-inputs">
+            <label for="input-grau"
+              >Grau de Escolaridade
+              <select name="grau" id="input-grau">
+                <option value="">Selecione uma opção</option>
+                <option value="primeiro">1°</option>
+                <option value="segundo">2°</option>
+                <option value="terceiro">3°</option>
+              </select>
+            </label>
+            <label for="input-escola">Instituição de Ensino <input type="text" placeholder="Instituição de Ensino" id="input-escola" /></label>
+          </div>
+        </section>
+        <!-- Informações de Endereço -->
+        <section>
+          <h2>Endereço</h2>
+          <label for="input-cep">CEP<input type="text" placeholder="Digite seu CEP" id="input-cep" /></label>
+          <div class="grupo-de-inputs-em-linha">
+            <label for="input-logradouro">Logradouro <input type="text" placeholder="Digite seu logradouro" id="input-logradouro" /></label>
+            <label for="input-numero">Numero <input type="text" placeholder="0" id="input-numero" /></label>
+          </div>
+          <label for="input-complemento">Complemento<input type="text" placeholder="Digite seu complemento" id="input-complemento" /></label>
+          <label for="input-bairro">Bairro<input type="text" placeholder="Digite seu bairro" id="input-bairro" /></label>
+          <label for="input-cidade">Cidade<input type="text" placeholder="Digite sua cidade" id="input-cidade" /></label>
+          <label for="input-estado">Estado<input type="text" placeholder="Digite seu estado" id="input-estado" /></label>
+        </section>
+        <!-- Informações de Senha -->
+        <section>
+          <h2>Criar Senha</h2>
+          <label for="input-senha">Senha<input type="password" placeholder="Criar Senha" id="input-senha" /></label>
+          <label for="input-repetirsenha">Repetir Senha<input type="password" placeholder="Repetir Senha" id="input-repetirsenha" /></label>
+        </section>
+        <button>Cadastrar</button>
+      </form>
+    </main>
+    <footer>
+      <div class="footer">
+        <a href="https://github.com/Puidor" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/carlosadrianoss/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <p>by <span>Carlos Adriano</span> © 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
